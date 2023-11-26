@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+  @apply text-secondary;
+}
+
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-header;
+  @apply text-primary;
+}
+
+.swiper-pagination {
+  position: relative !important;
+  transform: translateY(10px) !important;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-teal !important;
+}
+
+input {
+  color: black;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/icons/select.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
