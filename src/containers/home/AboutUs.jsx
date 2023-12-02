@@ -6,7 +6,7 @@ function AboutUs() {
     <section
       id="about-us"
       aria-label="About Us"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 py-16 md:space-y-32 space-y-16 flex lg:flex-row flex-col lg:gap-32"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 py-16 md:space-y-32 space-y-16 flex lg:flex-row flex-col lg:gap-32"
     >
       <div className="space-y-16">
         <div className="space-y-4">
@@ -22,7 +22,7 @@ function AboutUs() {
         </div>
         <div className="space-y-4">
           <h2 className="font-semibold lg:text-3xl text-2xl">
-            hr zuverlässiger Partner:
+            Ihr zuverlässiger Partner:
           </h2>
           <p className="lg:text-xl">
             Wir legen Wert auf Qualität und Kundenzufriedenheit. Mit MZ-Clean an

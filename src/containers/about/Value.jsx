@@ -6,7 +6,7 @@ function Value() {
     <section
       id="value"
       aria-label="Company Values"
-      className="xl:px-[10vw] md:px-[5vw] flex justify-center lg:flex-row flex-col xl:items-center"
+      className="2xl:px-[10vw] xl:px-[5vw] flex justify-center lg:flex-row flex-col xl:items-center"
     >
       <div className="bg-teal py-16 px-[5vw] lg:pr-32 space-y-4 text-zinc-800 [&>p]:lg:max-w-xl md:rounded-xl">
         <h1 className="text-3xl">Liebe Besucherinnen und Besucher</h1>

@@ -35,7 +35,7 @@ function Navbar() {
     <nav
       id="navigation"
       aria-label="Navigation Links"
-      className="xl:px-[10vw] md:px-[5vw] p-8 flex justify-between items-center"
+      className="2xl:px-[10vw] xl:px-[5vw] p-8 flex justify-between items-center"
     >
       <a href="/" className="md:w-48 w-32">
         <img src={logo} alt="MZ-Clean Logo" />

@@ -8,6 +8,7 @@ import { Pagination } from "swiper/modules";
 import { useEffect, useState } from "react";
 
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function OurServices() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -28,24 +29,34 @@ function OurServices() {
 
   const contentArray = [
     {
-      title: "Title 1",
-      paragraph: "This is the content for paragraph 1.",
+      title: "Büroreinigung",
+      paragraph:
+        "Ein sauberes Arbeitsumfeld ist entscheidend für die Produktivität und das Wohlbefinden Ihrer Mitarbeiter. Unsere Büroreinigungsdienstleistungen sorgen für eine makellose Arbeitsumgebung, in der Ihre Mitarbeiter effizient arbeiten können.",
+      img: "Card5.png",
     },
     {
-      title: "Title 2",
-      paragraph: "This is the content for paragraph 2.",
+      title: "Wohnungsreinigung",
+      paragraph:
+        "Übergabe-Reinigung: Wenn Sie Ihre Wohnung verlassen, sorgen wir dafür, dass Sie sie in einwandfreiem Zustand zurücklassen. Unsere Übergabe-Reinigung gewährleistet, dass Sie keine bösen Überraschungen erleben.",
+      img: "Card2.png",
     },
     {
-      title: "Title 3",
-      paragraph: "This is the content for paragraph 3.",
+      title: "Räumungs-Reinigung",
+      paragraph:
+        "Übergabe-Reinigung: Wenn Sie Ihre Wohnung verlassen, sorgen wir dafür, dass Sie sie in einwandfreiem Zustand zurücklassen. Unsere Übergabe-Reinigung gewährleistet, dass Sie keine bösen Überraschungen erleben.",
+      img: "Card3.png",
     },
     {
-      title: "Title 4",
-      paragraph: "This is the content for paragraph 4.",
+      title: "Unterhaltsreinigung",
+      paragraph:
+        "Ein sauberes Zuhause ist ein glückliches Zuhause. Unsere Unterhaltsreinigung hält Ihre Wohnräume stets frisch und einladend.",
+      img: "Card4.png",
     },
     {
-      title: "Title 5",
-      paragraph: "This is the content for paragraph 5.",
+      title: "Umzugsreinigung",
+      paragraph:
+        "Beim Umziehen gibt es genug zu tun, und die Reinigung sollte kein zusätzlicher Stressfaktor sein. Wir kümmern uns um die gründliche Reinigung Ihrer alten oder neuen Räumlichkeiten, damit Sie sich auf Ihr neues Zuhause oder Büro freuen können.",
+      img: "Card1.png",
     },
   ];
 
@@ -53,7 +64,7 @@ function OurServices() {
     <section
       id="our-services"
       aria-label="Our Services"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 pt-8 pb-16 md:space-y-32 space-y-16"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 pt-8 pb-16 md:space-y-32 space-y-16"
     >
       <div className="max-w-3xl space-y-8 relative sapce-y-4">
         <span className="text-sm text-teal font-semibold font-header uppercase tracking-[5px]">
@@ -71,7 +82,7 @@ function OurServices() {
         <section className="flex flex-wrap justify-center gap-8 [&>div]:w-[calc(33.333333%-22px)]">
           {contentArray.map((item, index) => (
             <div
-              className="bg-slate-200 rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-centerrounded-xl aspect-[2/3] relative p-8 flex items-end`}
               key={index}
             >
               <a
@@ -97,7 +108,7 @@ function OurServices() {
         >
           {contentArray.map((item, index) => (
             <SwiperSlide
-              className="bg-slate-200 rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end`}
               key={index}
             >
               <a
@@ -106,7 +117,7 @@ function OurServices() {
               >
                 <IoIosArrowForward className="text-2xl" />
               </a>
-              <div className="bg-white p-8 space-y-4 rounded-xl">
+              <div className="bg-white p-8 space-y-4 rounded-xl absolute bottom-8 left-8 right-8">
                 <h2 className="text-2xl font-semibold">{item.title}</h2>
                 <p>{item.paragraph}</p>
               </div>
@@ -127,12 +138,12 @@ function OurServices() {
         <h2 className="lg:text-4xl md:text-3xl text-2xl font-semibold">
           Frischer Start mit MZ-Clean: Buchen Sie jetzt für makellose Sauberkeit
         </h2>
-        <a
-          href=""
+        <Link
+          to={"/about"}
           className="block translate-y-8 w-fit px-8 py-4 rounded-full bg-teal text-white font-semibold font-header whitespace-nowrap"
         >
-          Alle ansehen
-        </a>
+          Kontaktieren
+        </Link>
       </div>
     </section>
   );

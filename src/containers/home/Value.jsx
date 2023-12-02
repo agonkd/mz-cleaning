@@ -1,13 +1,14 @@
 import lady from "../../assets/images/pics/cleaning-lady.png";
 import white from "../../assets/images/icons/white-diamond.png";
 import teal from "../../assets/images/icons/teal-diamond.png";
+import { Link } from "react-router-dom";
 
 function Value() {
   return (
     <section
       id="value"
       aria-label="Our Values"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 py-16 flex lg:flex-row flex-col justify-between gap-32"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 py-16 flex lg:flex-row flex-col justify-between gap-32"
     >
       <div className="2xl:max-w-3xl xl:max-w-xl max-w-lg space-y-8 relative">
         <img
@@ -39,12 +40,12 @@ function Value() {
           haben können. Aus diesem Grund sind wir bestrebt, Ihre
           Reinigungsanforderungen in jedem Detail zu erfüllen.
         </p>
-        <a
-          href=""
+        <Link
+          to={"/about"}
           className="block translate-y-8 w-fit px-8 py-4 rounded-full bg-teal text-white font-semibold font-header"
         >
           Erfahren Sie mehr
-        </a>
+        </Link>
       </div>
       <div className="relative rounded-xl">
         <img

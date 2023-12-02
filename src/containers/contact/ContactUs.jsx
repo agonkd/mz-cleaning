@@ -7,7 +7,7 @@ function ContactUs() {
     <section
       id="contact"
       aria-label="Contact Us"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 py-16 px-8 pt-8 pb-16 lg:grid grid-cols-2 md:gap-16 md:space-y-0 space-y-24 lg:text-xl"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 py-16 px-8 pt-8 pb-16 lg:grid grid-cols-2 md:gap-16 md:space-y-0 space-y-24 lg:text-xl"
     >
       <div>
         <h2 className="font-semibold 2xl:text-6xl md:text-4xl text-3xl mb-8">
@@ -30,7 +30,7 @@ function ContactUs() {
               <BsTelephone className="text-2xl text-white" />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-2xl text-header font-semibold">Phone</h3>
+              <h3 className="text-2xl text-header font-semibold">Telefon</h3>
               <p className="text-base">+41 76 683 09 77</p>
             </div>
           </div>

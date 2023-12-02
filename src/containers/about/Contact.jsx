@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import tools from "../../assets/images/pics/tools.png";
 
 function Contact() {
@@ -5,7 +6,7 @@ function Contact() {
     <section
       id="contact-us"
       aria-label="Contact Us"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 pt-8 pb-16 flex lg:flex-row flex-col justify-between md:gap-32 gap-16"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 pt-8 pb-16 flex lg:flex-row flex-col justify-between md:gap-32 gap-16"
     >
       <div className="max-w-3xl space-y-8 relative">
         <div className="space-y-4">
@@ -23,12 +24,12 @@ function Contact() {
           eine frische und saubere Umgebung. Buchen Sie jetzt und genießen Sie
           ein neues, sauberes Ambiente!
         </p>
-        <a
-          href=""
+        <Link
+          to={"/contact"}
           className="block w-fit px-8 py-4 rounded-full bg-teal text-white font-semibold font-header"
         >
-          Contact
-        </a>
+          Kontaktieren
+        </Link>
       </div>
       <div className="min-w-[300px]">
         <img src={tools} alt="" className="w-full" />

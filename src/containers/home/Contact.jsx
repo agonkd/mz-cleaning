@@ -6,7 +6,7 @@ function Contact() {
     <section
       id="contact"
       aria-label="Contact Us"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 py-16 grid items-center md:grid-cols-2 md:grid-rows-none grid-cols-none grid-rows-2 md:gap-16 lg:text-xl"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 py-16 grid items-center md:grid-cols-2 md:grid-rows-none grid-cols-none grid-rows-2 md:gap-16 lg:text-xl"
     >
       <div>
         <h2 className="font-semibold 2xl:text-6xl text- mb-8">Kontakt</h2>
@@ -20,7 +20,7 @@ function Contact() {
               <BsTelephone className="text-2xl text-white" />
             </div>
             <div className="flex flex-col">
-              <h3 className="text-2xl text-header font-semibold">Phone</h3>
+              <h3 className="text-2xl text-header font-semibold">Telefon</h3>
               <p className="text-base">+41 76 683 09 77</p>
             </div>
           </div>

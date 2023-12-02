@@ -5,7 +5,7 @@ function Footer() {
     <footer
       id="footer"
       aria-label="Footer"
-      className="bg-neutral-900 xl:px-[10vw] md:px-[5vw] p-8 text-stone-300"
+      className="bg-neutral-900 2xl:px-[10vw] xl:px-[5vw] p-8 text-stone-300"
     >
       <a href="/" className="md:w-48 w-32 border-b">
         <img src={logo} alt="MZ-Clean Logo" />

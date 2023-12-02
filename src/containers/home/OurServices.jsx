@@ -7,6 +7,7 @@ import { Pagination } from "swiper/modules";
 
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 function OurServices() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -27,16 +28,22 @@ function OurServices() {
 
   const contentArray = [
     {
-      title: "Title 1",
-      paragraph: "This is the content for paragraph 1.",
+      title: "Umzugsreinigung",
+      paragraph:
+        "Wir kümmern uns um die gründliche Reinigung Ihrer alten oder neuen Räumlichkeiten, damit Sie sich auf Ihr neues Zuhause oder Büro freuen können.",
+      img: "Card1.png",
     },
     {
-      title: "Title 2",
-      paragraph: "This is the content for paragraph 2.",
+      title: "Wohnungsreinigung",
+      paragraph:
+        "Übergabe-Reinigung: Wenn Sie Ihre Wohnung verlassen, sorgen wir dafür, dass Sie sie in einwandfreiem Zustand zurücklassen.",
+      img: "Card2.png",
     },
     {
-      title: "Title 3",
-      paragraph: "This is the content for paragraph 3.",
+      title: "Räumungs-Reinigung",
+      paragraph:
+        "Wir helfen Ihnen, sich von Unordnung und Schmutz zu befreien. Unsere Räumungs-Reinigung macht Platz für einen frischen Start.",
+      img: "Card3.png",
     },
   ];
 
@@ -44,7 +51,7 @@ function OurServices() {
     <div
       id="services"
       aria-label="Our Services"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 py-16 md:space-y-32 space-y-16"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 py-16 md:space-y-32 space-y-16"
     >
       <div className="w-full flex md:flex-row flex-col justify-between md:items-end">
         <div className="space-y-4">
@@ -55,18 +62,18 @@ function OurServices() {
             Unsere Dienstleistungen
           </h2>
         </div>
-        <a
-          href=""
+        <Link
+          to={"/services"}
           className="block translate-y-8 w-fit px-8 py-4 rounded-full bg-teal text-white font-semibold font-header"
         >
           Alle ansehen
-        </a>
+        </Link>
       </div>
       {windowWidth > 1000 ? (
         <section className="grid md:grid-cols-3 grid-cols-none md:grid-rows-none grid-rows-3 gap-8">
           {contentArray.map((item, index) => (
             <div
-              className="bg-slate-200 rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end`}
               key={index}
             >
               <a
@@ -92,7 +99,7 @@ function OurServices() {
         >
           {contentArray.map((item, index) => (
             <SwiperSlide
-              className="bg-slate-200 rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end`}
               key={index}
             >
               <a
@@ -101,7 +108,7 @@ function OurServices() {
               >
                 <IoIosArrowForward className="text-2xl" />
               </a>
-              <div className="bg-white p-8 space-y-4 rounded-xl">
+              <div className="bg-white p-8 space-y-4 rounded-xl absolute bottom-8 left-8 right-8">
                 <h2 className="text-2xl font-semibold">{item.title}</h2>
                 <p>{item.paragraph}</p>
               </div>

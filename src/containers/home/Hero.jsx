@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import diamond from "../../assets/images/icons/teal-diamond.png";
 import videobox from "../../assets/images/pics/video-box.png";
 
@@ -6,7 +7,7 @@ function Hero() {
     <header
       id="header"
       aria-label="Welcome to MZ-Clean.ch"
-      className="xl:px-[10vw] md:px-[5vw] md:py-32 px-8 pt-8 pb-16 md:space-y-32 space-y-16 relative"
+      className="2xl:px-[10vw] xl:px-[5vw] md:py-32 px-8 pt-8 pb-16 md:space-y-32 space-y-16 relative"
     >
       <section className="flex lg:flex-row flex-col justify-between lg:items-center lg:gap-32 gap-8">
         <div className="space-y-4">
@@ -21,7 +22,7 @@ function Hero() {
           <img
             src={diamond}
             alt="Diamond Icon"
-            className="md:w-auto w-16 absolute sm:-top-16 -top-24 lg:-left-24 md:-right-24 sm:-right-8 right-0"
+            className="md:w-auto w-16 absolute sm:-top-16 -top-32 lg:-left-24 md:-right-24 sm:-right-8 top -right-8"
           />
           <p>
             Profi in Sachen Sauberkeit: Bei MZ-Clean sind wir auf professionelle
@@ -29,12 +30,12 @@ function Hero() {
             Methoden und Technologien ein, um Ihre Räumlichkeiten makellos zu
             hinterlassen.
           </p>
-          <a
-            href=""
+          <Link
+            to={"/about"}
             className="block w-fit px-8 py-4 rounded-full bg-teal text-white font-semibold font-header"
           >
             Erfahren Sie mehr
-          </a>
+          </Link>
         </div>
       </section>
       <div>
