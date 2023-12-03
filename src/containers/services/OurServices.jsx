@@ -84,7 +84,7 @@ function OurServices() {
             <div
               className="bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end"
               style={{
-                backgroundImage: `url('/src/assets/images/pics/${item.img}')`,
+                backgroundImage: `url('/assets/${item.img}')`,
               }}
               key={index}
             >
@@ -113,7 +113,7 @@ function OurServices() {
             <SwiperSlide
               className="bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end"
               style={{
-                backgroundImage: `url('/src/assets/images/pics/${item.img}')`,
+                backgroundImage: `url('/assets/${item.img}')`,
               }}
               key={index}
             >
