@@ -1,4 +1,4 @@
-import logo from "../assets/images/brand/logo-dark.png";
+import logo from "../assets/images/brand/logo.png";
 
 function Footer() {
   return (
@@ -7,7 +7,7 @@ function Footer() {
       aria-label="Footer"
       className="bg-neutral-900 2xl:px-[10vw] xl:px-[5vw] p-8 text-stone-300"
     >
-      <a href="/" className="md:w-48 w-32 border-b">
+      <a href="/" className="block md:w-48 w-32">
         <img src={logo} alt="MZ-Clean Logo" />
       </a>
       <hr className="my-8" />

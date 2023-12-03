@@ -73,7 +73,10 @@ function OurServices() {
         <section className="grid md:grid-cols-3 grid-cols-none md:grid-rows-none grid-rows-3 gap-8">
           {contentArray.map((item, index) => (
             <div
-              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end`}
+              className="bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              style={{
+                backgroundImage: `url('/src/assets/images/pics/${item.img}')`,
+              }}
               key={index}
             >
               <a
@@ -99,7 +102,10 @@ function OurServices() {
         >
           {contentArray.map((item, index) => (
             <SwiperSlide
-              className={`bg-[url('../../assets/images/pics/${item.img}')] bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end`}
+              className="bg-cover bg-center rounded-xl aspect-[2/3] relative p-8 flex items-end"
+              style={{
+                backgroundImage: `url('/src/assets/images/pics/${item.img}')`,
+              }}
               key={index}
             >
               <a
